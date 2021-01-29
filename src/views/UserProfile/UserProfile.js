@@ -49,9 +49,9 @@ export default function UserProfile() {
             </CardHeader>
             <CardBody>
               <GridContainer>
-                <GridItem xs={12} sm={12} md={5}>
+                <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="Company (disabled)"
+                    labelText="Company: 트레드링스"
                     id="company-disabled"
                     formControlProps={{
                       fullWidth: true
@@ -61,93 +61,92 @@ export default function UserProfile() {
                     }}
                   />
                 </GridItem>
-                <GridItem xs={12} sm={12} md={3}>
+                <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="Username"
+                    labelText="name: 송하영"
                     id="username"
                     formControlProps={{
                       fullWidth: true
                     }}
+                    inputProps={{
+                      disabled: true
+                    }}
                   />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="Email address"
+                    labelText="Gender: 여자"
                     id="email-address"
                     formControlProps={{
                       fullWidth: true
                     }}
-                  />
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="First Name"
-                    id="first-name"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Last Name"
-                    id="last-name"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="City"
-                    id="city"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Country"
-                    id="country"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Postal Code"
-                    id="postal-code"
-                    formControlProps={{
-                      fullWidth: true
+                    inputProps={{
+                      disabled: true
                     }}
                   />
                 </GridItem>
               </GridContainer>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={12}>
-                  <InputLabel style={{ color: "#AAAAAA" }}>About me</InputLabel>
                   <CustomInput
-                    labelText="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
+                    labelText="Email address: hachu.developer@gmail.com"
+                    id="email-address"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                    inputProps={{
+                      disabled: true
+                    }}
+                  />
+                </GridItem>
+              </GridContainer>
+              <GridContainer>
+                <GridItem xs={12} sm={12} md={12}>
+                  <CustomInput
+                    labelText="GitHub: https://github.com/hachuu/"
+                    id="gitHub-address"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                    inputProps={{
+                      disabled: true
+                    }}
+                  />
+                </GridItem>
+              </GridContainer>
+              <GridContainer>
+                <GridItem xs={12} sm={12} md={12}>
+                  <InputLabel style={{ color: "#AAAAAA" }}>About Skill</InputLabel>
+                  <CustomInput
+                    labelText="Javascript
+                    Angular
+                    Typescript
+                    JAVA
+                    SQL
+                    HTML/CSS
+                    JQuery
+                    Spring
+                    Spring-Boot
+                    React
+                    Nodejs
+                    Git
+                    Azure"
                     id="about-me"
                     formControlProps={{
                       fullWidth: true
                     }}
                     inputProps={{
                       multiline: true,
-                      rows: 5
+                      rows: 5,
+                      disabled: true
                     }}
                   />
                 </GridItem>
               </GridContainer>
             </CardBody>
             <CardFooter>
-              <Button color="primary">Update Profile</Button>
+              {/* <a href="https://hachuu.github.io/hachu/">Hachu's Profile</a> */}
+              <Button color="primary" onClick={e => window.open('https://github.com/hachuu/')}>Hachu's Git으로 이동</Button>
             </CardFooter>
           </Card>
         </GridItem>
@@ -159,15 +158,15 @@ export default function UserProfile() {
               </a>
             </CardAvatar>
             <CardBody profile>
-              <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
-              <p className={classes.description}>
+              <h6 className={classes.cardCategory}>Front-End engineer</h6>
+              {/* <h4 className={classes.cardTitle}>송하영</h4> */}
+              {/* <p className={classes.description}>
                 Don{"'"}t be scared of the truth because we need to restart the
                 human foundation in truth And I love you like Kanye loves Kanye
                 I love Rick Owens’ bed design but the back is...
-              </p>
-              <Button color="primary" round>
-                Follow
+              </p> */}
+              <Button color="primary" round onClick={e => window.open('https://hachuu.github.io/hachu/')}>
+                Hachu's Profile
               </Button>
             </CardBody>
           </Card>

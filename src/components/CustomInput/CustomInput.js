@@ -44,13 +44,12 @@ export default function CustomInput(props) {
       className={formControlProps.className + " " + classes.formControl}
     >
       {labelText !== undefined ? (
-        <InputLabel
-          className={classes.labelRoot + labelClasses}
-          htmlFor={id}
-          {...labelProps}
-        >
-          {labelText}
-        </InputLabel>
+        labelText.split(' ').map(x => <span key={x}id={x}{...labelProps}>{x}<br/></span>)
+        // <InputLabel
+        //   className={classes.labelRoot + labelClasses}
+        //   htmlFor={id}
+        //   {...labelProps}
+        // >
       ) : null}
       <Input
         classes={{

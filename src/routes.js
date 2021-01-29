@@ -39,24 +39,24 @@ import RTLPage from "views/RTLPage/RTLPage.js";
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    name: "Dashboard",
-    rtlName: "لوحة القيادة",
+    name: "대시보드",
+    rtlName: "Dashboard",
     icon: Dashboard,
     component: DashboardPage,
     layout: "/admin"
   },
   {
     path: "/user",
-    name: "User Profile",
-    rtlName: "ملف تعريفي للمستخدم",
+    name: "송하영 프로필",
+    rtlName: "User Profile",
     icon: Person,
     component: UserProfile,
     layout: "/admin"
   },
   {
     path: "/table",
-    name: "Table List",
-    rtlName: "قائمة الجدول",
+    name: "경력 리스트",
+    rtlName: "Table List",
     icon: "content_paste",
     component: TableList,
     layout: "/admin"

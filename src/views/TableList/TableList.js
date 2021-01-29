@@ -48,22 +48,25 @@ export default function TableList() {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Simple Table</h4>
+            <h4 className={classes.cardTitleWhite}>경력 테이블</h4>
             <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
+              프로젝트 경험
             </p>
           </CardHeader>
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
+              tableHead={["프로젝트 명", "회사명", "기술스택", "기간"]}
               tableData={[
-                ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                ["대한항공 온라인 개편", "대한항공", "Angular8 SPA, typeScript Front/End 개발, W3C 웹접근성", "2019/09 ~ 2020/12"],
+                ["제주항공 FareFamily & New Class", "제주항공", "javascript, Front/End 개발", "2019/02 ~ 2019/09"],
+                ["아시아나항공 상용 우대 프로젝트", "아시아나항공", "Spring, Maven, javascript, Java, 오라클 SQL", "2018/08 ~ 2019/02"],
+                ["아시아나항공 온라인 개편", "아시아나항공", "Spring, Maven, javascript, Java, 오라클 SQL", "2017/06 ~ 2018/08"],
+                ["아시아나항공 환불 비용절감 프로젝트", "아시아나항공", "Spring, Maven, javascript, Java, 오라클 SQL", "2017/02 ~ 2017/06"],
+                ["아시아나항공 모바일 사용선 개선", "아시아나항공", "Spring, Maven, javascript, Java, 오라클 SQL", "2016/11 ~ 2017/02"],
+                ["아시아나항공 선호좌석 유료서비스 구축", "아시아나항공", "Spring, Maven, javascript, Java, 오라클 SQL", "2016/02 ~ 2016/11"],
+                ["아시아나항공 미국 WCAG 장차법 구축", "아시아나항공", "Spring, Maven, javascript, Java, 오라클 SQL, 웹접근성", "2015/06 ~ 2016/02"],
+                ["제주항공 중국 결제", "제주항공", "javascript, Java 개발", "2015/03 ~ 2015/06"],
               ]}
             />
           </CardBody>
@@ -73,35 +76,21 @@ export default function TableList() {
         <Card plain>
           <CardHeader plain color="primary">
             <h4 className={classes.cardTitleWhite}>
-              Table on Plain Background
+              경력 이력 테이블
             </h4>
             <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
+              이력 직급 정보
             </p>
           </CardHeader>
           <CardBody>
             <Table
               tableHeaderColor="primary"
-              tableHead={["ID", "Name", "Country", "City", "Salary"]}
+              tableHead={["ID", "회사명", "직위", "기간", "담당 업무"]}
               tableData={[
-                ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-                ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-                ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-                [
-                  "4",
-                  "Philip Chaney",
-                  "$38,735",
-                  "Korea, South",
-                  "Overland Park"
-                ],
-                [
-                  "5",
-                  "Doris Greene",
-                  "$63,542",
-                  "Malawi",
-                  "Feldkirchen in Kärnten"
-                ],
-                ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
+                ["1", "뷰웍스", "인턴", "2014/06~2014/08", "하드웨어/펌웨어 개발"],
+                ["2", "에어소프트", "사원", "2015/03~2017/12", "항공사 웹페이지 개발"],
+                ["3", "에어소프트", "대리", "2018/01~2020/12", "항공사 웹페이지 개발"],
+                ["4", "트레드링스", "과장", "2021/01~현재", "자사 솔루션 개발 및 운영"]
               ]}
             />
           </CardBody>
