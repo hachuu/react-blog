@@ -246,6 +246,7 @@ Instagram: <https://instagram.com/creativetimofficial>
 - 서버 배포
 
 ## TIL
-
-1. 2021/01/31
+1. 2021/01/30
+    - [[React] 프로젝트 GitHub Pages 배포하기](https://velog.io/@byjihye/react-github-pages)
+2. 2021/01/31
     - [React-Admin - backend와 연동](http://52.78.22.201/tutorials/react-admin/backend/)
