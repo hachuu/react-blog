@@ -13,7 +13,7 @@ import CardAvatar from "components/Card/CardAvatar.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 
-import avatar from "assets/img/faces/marc.jpg";
+import avatar from "assets/img/faces/profile.jpeg";
 
 const styles = {
   cardCategoryWhite: {
@@ -44,14 +44,14 @@ export default function UserProfile() {
         <GridItem xs={12} sm={12} md={8}>
           <Card>
             <CardHeader color="primary">
-              <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
-              <p className={classes.cardCategoryWhite}>Complete your profile</p>
+              <h4 className={classes.cardTitleWhite}>Profile</h4>
+              {/* <p className={classes.cardCategoryWhite}>Make It Count</p> */}
             </CardHeader>
             <CardBody>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="Company: 트레드링스"
+                    labelText="Company: (주)트레드링스"
                     id="company-disabled"
                     formControlProps={{
                       fullWidth: true
@@ -159,7 +159,7 @@ export default function UserProfile() {
             </CardAvatar>
             <CardBody profile>
               <h6 className={classes.cardCategory}>Front-End engineer</h6>
-              {/* <h4 className={classes.cardTitle}>송하영</h4> */}
+              <h4 className={classes.cardTitle}>Make It Count</h4>
               {/* <p className={classes.description}>
                 Don{"'"}t be scared of the truth because we need to restart the
                 human foundation in truth And I love you like Kanye loves Kanye

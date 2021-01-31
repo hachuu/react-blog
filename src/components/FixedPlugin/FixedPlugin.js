@@ -13,7 +13,7 @@ import imagine4 from "assets/img/sidebar-4.jpg";
 import Button from "components/CustomButtons/Button.js";
 
 export default function FixedPlugin(props) {
-  const [classes, setClasses] = React.useState("dropdown show");
+  const [classes, setClasses] = React.useState("dropdown");
   const [bg_checked, setBg_checked] = React.useState(true);
   const [bgImage, setBgImage] = React.useState(props.bgImage);
   const handleClick = () => {
@@ -25,7 +25,7 @@ export default function FixedPlugin(props) {
         "rtl-fixed-plugin": props.rtlActive
       })}
     >
-      <div id="fixedPluginClasses" className={props.fixedClasses}>
+      {/* <div id="fixedPluginClasses" className={props.fixedClasses}>
         <div onClick={handleClick}>
           <i className="fa fa-cog fa-2x" />
         </div>
@@ -174,7 +174,7 @@ export default function FixedPlugin(props) {
           </li>
           <li className="adjustments-line" />
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }
