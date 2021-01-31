@@ -47,7 +47,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
   },
-  "homepage": "https://hachuu.github.io/material-dashboard-react",
+  "homepage": "https://hachuu.github.io/react-blog",
   "optionalDependencies": {
     "@types/googlemaps": "3.39.6",
     "@types/markerclustererplus": "2.1.33",
