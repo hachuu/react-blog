@@ -13,9 +13,10 @@ import Update from "@material-ui/icons/Update";
 import ArrowUpward from "@material-ui/icons/ArrowUpward";
 import AccessTime from "@material-ui/icons/AccessTime";
 import Accessibility from "@material-ui/icons/Accessibility";
-import BugReport from "@material-ui/icons/BugReport";
-import Code from "@material-ui/icons/Code";
+import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+import HomeIcon from '@material-ui/icons/Home';
 import Cloud from "@material-ui/icons/Cloud";
+import StorageIcon from '@material-ui/icons/Storage';
 // core components
 import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -29,7 +30,7 @@ import CardIcon from "components/Card/CardIcon.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 
-import { bugs, website, server } from "variables/general.js";
+import { works, homeWork, quarter } from "variables/general.js";
 
 import {
   dailySalesChart,
@@ -40,6 +41,8 @@ import {
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
 
 const useStyles = makeStyles(styles);
+const remain = 11;
+const day = 11;
 
 export default function Dashboard() {
   const classes = useStyles();
@@ -52,9 +55,9 @@ export default function Dashboard() {
               <CardIcon color="warning">
                 <Icon>content_copy</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>Used Space</p>
+              <p className={classes.cardCategory}>Annual Use</p>
               <h3 className={classes.cardTitle}>
-                49/50 <small>GB</small>
+                {remain}/{day} <small>Days</small>
               </h3>
             </CardHeader>
             <CardFooter stats>
@@ -63,7 +66,7 @@ export default function Dashboard() {
                   <Warning />
                 </Danger>
                 <a href="#pablo" onClick={e => e.preventDefault()}>
-                  Get more space
+                  Let's pledge next year
                 </a>
               </div>
             </CardFooter>
@@ -202,35 +205,35 @@ export default function Dashboard() {
             headerColor="primary"
             tabs={[
               {
-                tabName: "Bugs",
-                tabIcon: BugReport,
+                tabName: "Company WorkS",
+                tabIcon: AccessAlarmIcon,
                 tabContent: (
                   <Tasks
-                    checkedIndexes={[0, 3]}
+                    checkedIndexes={[]}
                     tasksIndexes={[0, 1, 2, 3]}
-                    tasks={bugs}
+                    tasks={works}
                   />
                 )
               },
               {
-                tabName: "Website",
-                tabIcon: Code,
+                tabName: "HomeWork",
+                tabIcon: HomeIcon,
                 tabContent: (
                   <Tasks
-                    checkedIndexes={[0]}
-                    tasksIndexes={[0, 1]}
-                    tasks={website}
-                  />
-                )
-              },
-              {
-                tabName: "Server",
-                tabIcon: Cloud,
-                tabContent: (
-                  <Tasks
-                    checkedIndexes={[1]}
+                    checkedIndexes={[]}
                     tasksIndexes={[0, 1, 2]}
-                    tasks={server}
+                    tasks={homeWork}
+                  />
+                )
+              },
+              {
+                tabName: "Quarterly goal",
+                tabIcon: StorageIcon,
+                tabContent: (
+                  <Tasks
+                    checkedIndexes={[]}
+                    tasksIndexes={[0, 1, 2]}
+                    tasks={quarter}
                   />
                 )
               }
